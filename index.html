@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+<style>
+    body {
+        background-image: url("https://static.vecteezy.com/ti/vetor-gratis/p3/16073881-coracoes-coloridos-no-padrao-perfeito-de-fundo-branco-vetor.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .kaiqui {
+        display:none
+    }
+    #movable {
+           
+            position: absolute;
+            transition: top 0.3s, left 0.3s; /* Suaviza a transição de posição */
+        }
+</style>
+<body>
+    <center>
+        <h1 style="margin-top: 10%;">Namora cmg?</h1>
+    <img class="kaiqui" id="1" src="data:image/jpeg;base64,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" alt=""></a> <button onclick="kaiquiviado()">sim</button> 
+    </a>
+    <button id="movable">nao</button>
+    <audio id="music" src="./Restart - Levo Comigo - Restart.mp3"></audio>
+    </center>
+    
+    
+</body>
+<script>
+    const element = document.getElementById('movable');
+
+element.addEventListener('mouseover', () => {
+    const newX = Math.random() * window.innerWidth - element.clientWidth;
+    const newY = Math.random() * window.innerHeight - element.clientHeight;
+    element.style.left = `${newX}px`;
+    element.style.top = `${newY}px`;
+});
+    function kaiquiviado(){
+        var audio = document.getElementById("music");
+    audio.volume = 0.25
+        audio.play();
+        let img = document.getElementById("1")
+        img.style.display = "block"
+    }
+</script>
+</html>
